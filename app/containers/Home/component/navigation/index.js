@@ -27,7 +27,7 @@ export default function Nav(props) {
         <div className="main_menu" >
           <nav className="navbar navbar-expand-lg  ">
             <div className="container box_1620  ">
-              <a className="navbar-brand logo_h" ><img className="logoNavbar logo-hit" src={scrolled ? logo : whitelogo} alt="logo"  /></a>
+              <a className="navbar-brand logo_h" ><img className="logoNavbar logo-hit" src={scrolled ? logo : whitelogo} alt="logo" /></a>
               <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="icon-bar" />
                 <span className="icon-bar" />
@@ -35,12 +35,12 @@ export default function Nav(props) {
               </button>
               <div className="collapse navbar-collapse offset" id="navbarSupportedContent">
                 <ul className="nav navbar-nav menu_nav justify-content-end">
-                  <li className={props.active == 'home' ? "nav-item  active" : 'nav-item'}><Link className="nav-link" to="/">Trang chủ</Link></li>
-                  <li className={props.active == 'about' ? "nav-item  active" : 'nav-item'}><Link className="nav-link" to="/about">About</Link></li>
-                  <li className="nav-item"><Link className="nav-link" to="/dev">Đội ngũ phát triển</Link></li>
-                  <li className="nav-item"><Link className="nav-link" to="/member">Thành viên</Link>
+                  <li className={props.active == 'home' ? "nav-item  active" : 'nav-item'}><Link className="nav-link" to="/">Tiêu Chí Hoạt Động</Link></li>
+                  <li className={props.active == 'about' ? "nav-item  active" : 'nav-item'}><Link className="nav-link" to="/about">Các Lớp Học</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/dev">Ban Chủ Nhiệm</Link></li>
+                  <li className="nav-item"><Link className="nav-link" to="/member">Bộ Sưu Tập</Link>
                   </li><li className="nav-item submenu dropdown">
-                    <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tin tức</a>
+                    <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Liện Hệ</a>
                     {/* <ul class="dropdown-menu">
             <li class="nav-item"><a class="nav-link" href="amentities.html"></a>
           </ul> */}
