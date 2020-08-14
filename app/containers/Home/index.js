@@ -41,6 +41,11 @@ import anh5 from '../../assets/img/Avatar/5.jpg';
 import anh6 from '../../assets/img/Avatar/6.jpg';
 import dulich from '../../assets/img/Avatar/dulich.jpg';
 
+import FavoriteIcon from '@material-ui/icons/Favorite';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import GitHubIcon from '@material-ui/icons/GitHub';
+
 // import avatar from '../../assets/img/Avatar/avatar.png';
 
 export default function Home() {
@@ -404,13 +409,10 @@ export default function Home() {
             <div className="row">
               <div className="col-md-6">
                 <ul style={{ listStyle: 'none', padding: 0, marginTop: '20px' }}>
-                  <li><i className="fa fa-thumbtack" style={{ color: '#418DD8' }} /> &nbsp;&nbsp;&nbsp; 9th floor, A1, HaUI
-        </li>
-                  <li className="mt-2 mb-2"><i className="fa fa-phone-square" style={{ color: 'rgb(32, 212, 32)' }} />
-          &nbsp;&nbsp; Admin: 0396500575</li>
-                  <li className="mb-2"><i className="fa fa-envelope-open-text" style={{ color: 'rgb(255, 0, 0)' }} /> &nbsp;
-          Facebook.com/HITClub.HaUI</li>
-                  <li><i className="fab fa-facebook-square" /> &nbsp;&nbsp; HIT - Learning Corner</li>
+                  <li>9th floor, A1, HaUI</li>
+                  <li className="mt-2 mb-2">Admin: 0396500575</li>
+                  <li className="mb-2">Facebook.com/HITClub.HaUI</li>
+                  <li>HIT - Learning Corner</li>
                 </ul>
               </div>
               <div className="col-md-6">
@@ -430,86 +432,26 @@ export default function Home() {
       </section>
 
 
-      <footer className="footer-area">
-        <div className="container">
-          <div className="row">
-            <div className="col-lg-3  col-md-6 col-sm-6">
-              <div className="single-footer-widget">
-                <h6>About US</h6>
-                <p>
-                  HIT CLUB
-          </p>
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-6 col-sm-6">
-              <div className="single-footer-widget">
-                <h6>CONTACT</h6>
-                <div className="row">
-                  <div className="col">
-                    <ul>
-                      <li><a href="#">Home</a></li>
-                      <li><a href="#">Facebook</a></li>
-                      <li><a href="#">Services</a></li>
-                      <li><a href="#">Portfolio</a></li>
-                    </ul>
-                  </div>
-                  <div className="col">
-                    <ul>
-                      <li><a href="#">Team</a></li>
-                      <li><a href="#">Pricing</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">Contact</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3  col-md-6 col-sm-6">
-              <div className="single-footer-widget">
-                <h6>Newsletter</h6>
-                <p>
-                  For business professionals caught between high OEM price and mediocre print and graphic output.
-          </p>
+      <footer className="footer-area " >
+        <div className="container ">
 
-              </div>
+
+
+
+          <div className="row align-items-center text-center ">
+            <p className="col-lg-8 col-sm-12 footer-text  text-center text-lg-left text-light mb-5" >{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
+        Copyright © All rights reserved | This template is made with by  <a href="https://colorlib.com" target="_blank"> HIT <FavoriteIcon></FavoriteIcon> </a>
+              {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
+            <div className="col-lg-4 col-sm-12 footer-social text-center text-lg-right text-light mb-5">
+              <FacebookIcon ></FacebookIcon >
+              <TwitterIcon className="m-2 "></TwitterIcon>
+              <GitHubIcon ></GitHubIcon>
+
             </div>
-            <div className="col-lg-3  col-md-6 col-sm-6">
-              <div className="single-footer-widget mail-chimp">
-                <h6 className="mb-20">InstaFeed</h6>
-                <ul className="instafeed d-flex flex-wrap">
-                  {/* <li><img src="img/instagram/i1.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i2.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i3.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i4.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i5.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i6.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i7.jpg" alt="" /></li>
-                  <li><img src="img/instagram/i8.jpg" alt="" /></li> */}
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <div className="row align-items-center">
-              <p className="col-lg-8 col-sm-12 footer-text m-0 text-center text-lg-left">{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-          Copyright © All rights reserved | This template is made with <i className="fa fa-heart" aria-hidden="true" /> by  <a href="https://colorlib.com" target="_blank"> HIT</a>
-                {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
-              <div className="col-lg-4 col-sm-12 footer-social text-center text-lg-right">
-                <a href="#"><i className="fab fa-facebook-f" /></a>
-                <a href="#"><i className="fab fa-twitter" /></a>
-                <a href="#"><i className="fab fa-dribbble" /></a>
-                <a href="#"><i className="fab fa-behance" /></a>
-              </div>
-            </div>
+
           </div>
         </div>
       </footer>
-
-
-      {/*================Blog section End =================*/}
-      {/* ================ start footer Area ================= */}
-
-      {/* ================ End footer Area ================= */}
     </div >
 
 

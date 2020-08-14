@@ -28,7 +28,7 @@ import { login, logOut } from './actions';
 // import logo from '../../images/logos/LogoHIT.png'
 import FavoriteTwoToneIcon from '@material-ui/icons/FavoriteTwoTone';
 import CustomizedSnackbars from '../../components/SnackBar/index'
-import { closeSnackbar} from '../MemberPage/actions';
+import { closeSnackbar } from '../MemberPage/actions';
 import logo from '../../assets/img/home/asset2.png';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 
@@ -38,7 +38,7 @@ import LockOpenIcon from '@material-ui/icons/LockOpen';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="textSecondary" align="center" style = {{bottom:0}}>
+    <Typography variant="body2" color="textSecondary" align="center" style={{ bottom: 0 }}>
       {'Copyright © '}
       <Link color="inherit" href="https://material-ui.com/">
         Hit Club
@@ -50,19 +50,19 @@ function Copyright() {
 }
 
 const useStyles = makeStyles(theme => ({
-    root: {
+  root: {
     // backgroundImage: `url(${bg})`,
 
-   
+
     height: '100%',
-    },
- 
+  },
+
   paper: {
     marginTop: theme.spacing(8),
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-   
+
   },
   avatar: {
     margin: theme.spacing(1),
@@ -74,7 +74,9 @@ const useStyles = makeStyles(theme => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    backgroundColor: origin,
   },
+
 }));
 
 export function SignIn(props) {
@@ -85,14 +87,14 @@ export function SignIn(props) {
   useEffect(() => {
 
     const isAuth = localStorage.getItem('isAuthenticated');
-    if ( isAuth) {
+    if (isAuth) {
       console.log(props.singIn);
-      
+
       props.history.push('/admin/dashboard');
     }
   }), [props.signIn.isLoading];
 
-  useEffect(() => {  
+  useEffect(() => {
     const isAuth = localStorage.getItem('isAuthenticated');
     if (props.signIn.logined || isAuth) {
       props.history.push('/admin');
@@ -100,49 +102,49 @@ export function SignIn(props) {
     }
   }), [];
 
-  
-  
 
-  const handleSubmit= (event) => {
-    
+
+
+  const handleSubmit = (event) => {
+
     props.onLogin(email, password);
     event.preventDefault();
 
 
-    
+
   };
   return (
-    
-    
-    
+
+
+
     <Container component="main" maxWidth="xs" >
       {/* <CustomizedSnackbars open={memberPage.status} message={memberPage.message} onClose={props.onCloseSnackbar} /> */}
-      
-      
-      
-      <CssBaseline className={classes.Container}/>
-        
+
+
+
+      <CssBaseline className={classes.Container} />
+
       <div className={classes.paper}>
-        
-        
-        
+
+
+
         <ValidatorForm onSubmit={handleSubmit} />
-        
-        
+
+
 
         <Link className={classes.logoLink} to="/">
-        {/* <img align="center"
+          {/* <img align="center"
           className={classes.logoImage}
           // src="/images/logos/brainalytica_logo.svg"
           alt="anh"
           src={logo}
           style={{ width: "80px" ,marginRight:'10px'}}
         /> */}
-          <LockOpenIcon fontSize='large' color= "action"/> 
+          <LockOpenIcon fontSize='large' color="action" />
           {/* <FavoriteTwoToneIcon color='secondary' align="center"/> */}
-      </Link>
-       
-         
+        </Link>
+
+
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
@@ -205,10 +207,10 @@ export function SignIn(props) {
       <Box mt={8}>
         <Copyright />
       </Box>
-      
+
     </Container>
-    
-    
+
+
   );
 }
 SignIn.propTypes = {
