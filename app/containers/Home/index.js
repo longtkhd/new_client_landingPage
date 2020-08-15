@@ -39,6 +39,9 @@ import anh3 from '../../assets/img/Avatar/3.jpg';
 import anh4 from '../../assets/img/Avatar/4.jpg';
 import anh5 from '../../assets/img/Avatar/5.jpg';
 import anh6 from '../../assets/img/Avatar/6.jpg';
+import anh7 from '../../assets/img/Avatar/7.jpg';
+import anh8 from '../../assets/img/Avatar/8.jpg';
+import anh9 from '../../assets/img/Avatar/9.jpg';
 import dulich from '../../assets/img/Avatar/dulich.jpg';
 
 import FavoriteIcon from '@material-ui/icons/Favorite';
@@ -370,7 +373,7 @@ export default function Home() {
                 <div className="pic-in"><img src={anh1} alt="" /></div>
               </div>
               <div className="pic">
-                <div className="pic-in"><img src={anh2} alt="" /></div>
+                <div className="pic-in"><img src={anh9} alt="" /></div>
               </div>
               <div className="pic">
                 <div className="pic-in"><img src={anh3} alt="" /></div>
@@ -378,7 +381,7 @@ export default function Home() {
             </div>
             <div className="portfolio-in">
               <div className="pic">
-                <div className="pic-in"><img src={anh4} alt="" /></div>
+                <div className="pic-in"><img src={anh8} alt="" /></div>
               </div>
               <div className="pic">
                 <div className="pic-in"><img src={anh5} alt="" /></div>
@@ -440,7 +443,7 @@ export default function Home() {
 
           <div className="row align-items-center text-center ">
             <p className="col-lg-8 col-sm-12 footer-text  text-center text-lg-left text-light mb-5" >{/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-        Copyright © All rights reserved | This template is made with by  <a href="https://colorlib.com" target="_blank"> HIT <FavoriteIcon></FavoriteIcon> </a>
+            Copyright © 2020 <a href="https://colorlib.com" target="_blank">  HIT Club  <FavoriteIcon></FavoriteIcon> </a>
               {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}</p>
             <div className="col-lg-4 col-sm-12 footer-social text-center text-lg-right text-light mb-5">
               <FacebookIcon ></FacebookIcon >

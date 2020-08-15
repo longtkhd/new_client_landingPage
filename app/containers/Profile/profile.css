@@ -145,7 +145,7 @@ ul li {
 
 .wrapper-footer_socical a>i {
     margin-left: 5%;
-    color: white;
+    color: white !important;
     opacity: 0.5;
 }
 
@@ -1113,13 +1113,14 @@ ul li {
         /* background-color: green; */
         font-size: 2rem;
         text-align: center;
-        display: flex;
+        /* display: flex; */
         justify-content: space-around;
     }
 
+    /* 
     .wrapper-footer_socical a>i {
         margin: 0 0;
-    }
+    } */
 }
 
 @media screen and (min-width: 781px) {
@@ -1199,7 +1200,7 @@ ul li {
     }
 
     .wrapper-footer_socical {
-        flex: 0 0 30%;
+        flex: 0 0 5% !important;
         /* background-color: green; */
         font-size: 2rem;
         text-align: center;
@@ -1209,6 +1210,7 @@ ul li {
 
     .wrapper-footer_socical a {
         margin: 0%;
+        color: white !important;
     }
 }
 
@@ -1292,13 +1294,14 @@ ul li {
         flex: 0 0 30%;
         /* background-color: green; */
         font-size: 2rem;
-        text-align: center;
+        /* text-align: center; */
         display: flex;
         justify-content: space-around;
     }
 
     .wrapper-footer_socical a {
         margin: 0;
+        color: white !important;
     }
 }
 
@@ -1377,7 +1380,11 @@ ul li {
     }
 
     .wrapper-footer_socical a>.fa-github {
-        margin-left: 500%;
+        /* margin-left: 500%; */
+    }
+
+    .wrapper-footer_socical a {
+        color: white !important;
     }
 
     .wrapper-content_Infor {

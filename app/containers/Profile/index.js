@@ -28,6 +28,12 @@ import saga from './saga';
 import { getUserById, getUserByIdSuccess, getUserByIdFailed } from './actions';
 import { BASE_URL } from '../../urlConfig';
 import logo from '../../images/logos/LogoHitWhite.png';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import EmailIcon from '@material-ui/icons/Email';
+import GroupWorkIcon from '@material-ui/icons/GroupWork';
+import LocalActivityIcon from '@material-ui/icons/LocalActivity';
+import MenuBookIcon from '@material-ui/icons/MenuBook';
 import moduleName from './profile.css';
 // import styles from './styles';
 // const useStyles = makeStyles(styles);
@@ -40,7 +46,13 @@ const useStyles = makeStyles((theme) => ({
   imgs: {
     width: '100%',
     height: '100%',
-    borderRadius: '50%'
+    borderRadius: '50%',
+    objectFit: "cover",
+
+  },
+  github: {
+    marginLeft: "auto",
+    color: "white,"
 
   },
 
@@ -97,17 +109,18 @@ export function Profile(props) {
           <div className="content_Infor-details">
             <div class="Infor-details_left">
               <ul>
-                <li><i class="fas fa-phone-alt"></i> Số điện thoại: <span>{user ? user.phone : null}</span></li>
-                <li><i class="fas fa-envelope"></i> Email: <span>{user ? user.email : null}</span></li>
-                <li><i class="fas fa-birthday-cake"></i> Ngày sinh: <span>{user ? new Date(user.dob).toLocaleDateString('en-GB') : null}</span></li>
+                {/* <li><i class="fas fa-phone-alt"></i> Số điện thoại: <span>{user ? user.phone : null}</span></li> */}
+                <li><EmailIcon></EmailIcon> Email: <span>{user ? user.email : null}</span></li>
+                {/* <li><i class="fas fa-birthday-cake"></i> Ngày sinh: <span>{user ? new Date(user.dob).toLocaleDateString('en-GB') : null}</span></li> */}
+                <li><MenuBookIcon></MenuBookIcon> Khoa: <span>  {user ? user.faculty : null}</span></li>
               </ul>
             </div>
 
             <div class="Infor-details_right">
               <ul>
-                <li><i class="fas fa-search"></i> Khoa: <span>  {user ? user.faculty : null}</span></li>
-                <li><i class="fas fa-book-open"></i> Lớp: <span>  {user ? user.class : null}</span></li>
-                <li><i class="fab fa-black-tie"></i> Khóa: <span>k13</span></li>
+
+                <li><GroupWorkIcon></GroupWorkIcon> Lớp: <span>  {user ? user.class : null}</span></li>
+                <li><LocalActivityIcon></LocalActivityIcon> Khóa: <span>{user ? user.schoolYear : null}</span></li>
               </ul>
             </div>
           </div>
@@ -119,9 +132,11 @@ export function Profile(props) {
         <a href="https://hithaui.com/">HIT Club</a>
         </div>
         <div className="wrapper-footer_socical">
-          <a href="https://github.com/hit-haui" target="_blank"><i class="fab fa-github" /></a>
-          <a href="https://www.facebook.com/HITClub.HaUI" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a href="https://github.com/hit-haui" target="_blank" clasName="text-light " ><GitHubIcon className={classes.github}></GitHubIcon></a>
+          <a href="https://www.facebook.com/HITClub.HaUI" target="_blank"><FacebookIcon></FacebookIcon></a>
+
         </div>
+
       </section>
     </div>
   );
